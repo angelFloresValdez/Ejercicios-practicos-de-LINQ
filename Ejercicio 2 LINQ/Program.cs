@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 
 
-//Where con objetos 
+
 
 var carrros = new List<Carro>() {
         new Carro { Nombre = "Bmw", Año = 2018, FechaFabricacion = new DateTime(2018, 1, 2), Viejo = true },
@@ -10,9 +10,12 @@ var carrros = new List<Carro>() {
          new Carro { Nombre = "Audi", Año = 2023, FechaFabricacion = new DateTime(2023, 12, 31), Viejo = true },        
 };
 
+
 //OrderBy y orderByDescending
 var ordenarPorAño1 =carrros.OrderBy(c=> c.Año);
 var ordenarPorAño2=carrros.OrderByDescending(c=> c.Año);
+
+//----------------------------------------------------------------------------
 
 foreach (var carro in ordenarPorAño1)
 {
@@ -24,9 +27,9 @@ foreach(var carro2 in ordenarPorAño2)
     Console.WriteLine($"{carro2.Nombre} salio en el año {carro2.Año}");
 }
 
+//----------------------------------------------------------------------------
 
-
-
+//Where con objetos 
 var carroAñoMenorA2018=carrros.Where(c=>c.Año<=2018).ToList();
 Console.WriteLine("Los carros con año menor a 2018 :");
 
@@ -49,10 +52,13 @@ foreach (var carro in carroAñoMenorA2018)
 //      Console.WriteLine($"{carro.Nombre} es viejo");
 // }
 
+//----------------------------------------------------------------------------
+
 // //firts y firtsordefault
 // var primercarro = carrros.First();
 // var primercarro1 = carrros.FirstOrDefault();
 
+//----------------------------------------------------------------------------
 // Last y LastOrDefault
 // var ultimoCarro=carrros.Last();
 // var ultimoCarro2=carrros.LastOrDefault();
@@ -60,11 +66,13 @@ foreach (var carro in carroAñoMenorA2018)
 
 // var a = 1;
 
+//----------------------------------------------------------------------------
 // ElementAt y ElementAtOrDefault.
 // var carrPorIndice=carrros.ElementAt(0);
 // var carrPorIndice2=carrros.ElementAtOrDefault(1);
 // var b =1;
 
+//----------------------------------------------------------------------------
 // Single y SingleOrDefault.
 // var carromayor2020=carrros.Single(c =>c.Año>2020);
 
@@ -78,6 +86,7 @@ foreach (var carro in carroAñoMenorA2018)
 //     Console.WriteLine("Hubo un error");
 // }
 
+//----------------------------------------------------------------------------
 //Oftype
 // var listadocar=new List<object>(){"BMW",1,2, "AUDI",true};
 // var strings =listadocar.OfType<string>();

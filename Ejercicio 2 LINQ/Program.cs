@@ -15,6 +15,9 @@ var carrros = new List<Carro>() {
 var ordenarPorAño1 =carrros.OrderBy(c=> c.Año);
 var ordenarPorAño2=carrros.OrderByDescending(c=> c.Año);
 
+var CarrosPorAño= from c in carrros
+orderby c.Año descending select c;
+
 //----------------------------------------------------------------------------
 
 foreach (var carro in ordenarPorAño1)
@@ -77,13 +80,24 @@ foreach (var carro in carroAñoMenorA2018)
 // var carromayor2020=carrros.Single(c =>c.Año>2020);
 
 // try{
-//     var personaMenorDe22 = carrros.Single(p => p.Año < 2020);
-// Console.WriteLine($"{personaMenorDe22.Nombre}");
-//  var personaMayorA100 = carrros.SingleOrDefault(p => p.Año > 2018); // No entra al Catch.
+//     var CarroMenorDe2020 = carrros.Single(p => p.Año < 2020);
+// Console.WriteLine($"{CarroMenorDe2020.Nombre}");
+//  var personaMayorA100 = carrros.SingleOrDefault(p => p.Año > 2018); 
 // }
 // catch(Exception ex)
 // {
 //     Console.WriteLine("Hubo un error");
+// }
+
+// try
+// {
+//     var Carromenorde2018 = carrros.Single(c => c.Año < 2018);
+//     Console.WriteLine($"{Carromenorde2018.Nombre}");
+//     var personaMayorA100 = carrros.SingleOrDefault(c => c.Año > 2000); 
+// }
+// catch (Exception ex)
+// {
+//     Console.WriteLine("Hubo un error, arreglo vacío");
 // }
 
 //----------------------------------------------------------------------------

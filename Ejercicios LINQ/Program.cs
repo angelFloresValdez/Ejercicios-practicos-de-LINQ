@@ -1,5 +1,5 @@
-﻿// Ejercicio 1 
-// String [] numeros={1,2,3,4,5,6,}
+﻿
+// String [] numeros={1,2,3,4,5,6,7}
 int[] numeros=Enumerable.Range(1,7).ToArray();
 
 //usando sintaxis lambda

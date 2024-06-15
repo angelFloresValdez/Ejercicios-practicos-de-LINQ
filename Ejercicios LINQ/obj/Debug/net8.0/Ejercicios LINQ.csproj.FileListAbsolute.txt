@@ -12,3 +12,4 @@ C:\Users\Angel Flores\Desktop\LINQ\Ejercicios LINQ\obj\Debug\net8.0\refint\Ejerc
 C:\Users\Angel Flores\Desktop\LINQ\Ejercicios LINQ\obj\Debug\net8.0\Ejercicios LINQ.pdb
 C:\Users\Angel Flores\Desktop\LINQ\Ejercicios LINQ\obj\Debug\net8.0\Ejercicios LINQ.genruntimeconfig.cache
 C:\Users\Angel Flores\Desktop\LINQ\Ejercicios LINQ\obj\Debug\net8.0\ref\Ejercicios LINQ.dll
+C:\Users\Angel Flores\Desktop\LINQ\Ejercicios LINQ\obj\Debug\net8.0\Ejercicios LINQ.sourcelink.json

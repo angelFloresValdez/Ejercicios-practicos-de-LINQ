@@ -79,25 +79,25 @@ foreach (var carro in carroAñoMenorA2018)
 // Single y SingleOrDefault.
 // var carromayor2020=carrros.Single(c =>c.Año>2020);
 
-// try{
-//     var CarroMenorDe2020 = carrros.Single(p => p.Año < 2020);
-// Console.WriteLine($"{CarroMenorDe2020.Nombre}");
-//  var personaMayorA100 = carrros.SingleOrDefault(p => p.Año > 2018); 
-// }
-// catch(Exception ex)
-// {
-//     Console.WriteLine("Hubo un error");
-// }
+//  try{
+//      var CarroMenorDe2018 = carrros.Single(p => p.Año < 2018);
+//  Console.WriteLine($"{CarroMenorDe2018.Nombre}");
+//   var CarroMenor2020 = carrros.SingleOrDefault(p => p.Año > 2018); 
+//  }
+//  catch(Exception ex)
+//  {
+//      Console.WriteLine("Hubo un error,arreglo vacio");
+//  }
 
-// try
-// {
-//     var Carromenorde2018 = carrros.Single(c => c.Año < 2018);
-//     Console.WriteLine($"{Carromenorde2018.Nombre}");
-//     var personaMayorA100 = carrros.SingleOrDefault(c => c.Año > 2000); 
-// }
-// catch (Exception ex)
-// {
-//     Console.WriteLine("Hubo un error, arreglo vacío");
+//  try
+//  {
+//      var CarroMayor2017 = carrros.SingleOrDefault(c => c.Año > 2017);
+     
+    
+//  }
+//  catch (Exception ex)
+//  {
+//      Console.WriteLine("Hubo otro error,Arreglo con mas de un elemento ");
 // }
 
 //----------------------------------------------------------------------------
